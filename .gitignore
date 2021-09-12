@@ -5,8 +5,8 @@
 *.exe
 *.o
 *.so
-*.dSYM/Contents/Info.plist
-*.dSYM/Contents/Resources/DWARF/*
+**.dSYM/Contents/Info.plist
+**.dSYM/Contents/Resources/DWARF/*
 
 # Packages #
 ############
