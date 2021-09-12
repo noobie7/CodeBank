@@ -1040,4 +1040,4 @@ Mkfile.old
 dkms.conf
 
 **/*.vscode
-**/^(?!*[.]cpp$).*$
+**/^(?:(?!\.cpp).)*$
