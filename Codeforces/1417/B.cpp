@@ -1,0 +1,51 @@
+/*
+"Won't stop until I'm phenomenal."
+- Phenomenal, Eminem
+ */
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+#define ff first
+#define Shazam ios_base::sync_with_stdio(false);   cin.tie(NULL); cout.tie(NULL);
+#define ss second
+#define all(c) c.begin(),c.end()
+#define endl "\n"
+#define test() int t; cin>>t; while(t--)
+#define fl(i,a,b) for(int i = a ; i <b ;i++)
+#define get(a) fl(i,0,a.size())  cin>>a[i];
+#define pra(a) fl(i,0,a.size()) cout<<a[i]<<" ";	cout<<endl;
+#define pr(a,n) fl(i,0,n) cout<<a[i]<<" ";	cout<<endl;
+const ll INF = 2e18;
+const int inf = 2e9;
+const int mod1 = 1e9 + 7;
+
+
+
+int main(){
+    Shazam;
+    test(){
+        int n; cin>>n;
+        ll s; cin>>s;
+        map<int,vector<int>> f;
+        for(int i = 0 ; i < n; i++){
+            int k; cin>>k;
+            f[k].push_back(i);
+        }
+        vector<int> ans(n);
+        for(auto iv : f){
+            if(iv.ff>=(s+1)/2) break;
+            for(int i : iv.ss){
+                ans[i] = 1;
+            }
+        }
+        if(s&1^1 && f.count(s/2)){
+            
+            for(int i = 0 ; i < f[s/2].size()/2; i++){
+                ans[f[s/2][i]] = 1;
+
+            }
+        }
+        pra(ans);
+    }
+    return 0;
+}
