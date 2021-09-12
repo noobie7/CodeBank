@@ -2,7 +2,7 @@
 *.com
 *.class
 *.dll
-*.exe
+**.exe
 *.o
 *.so
 **.dSYM/Contents/Info.plist
