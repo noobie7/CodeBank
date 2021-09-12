@@ -8,7 +8,7 @@
 **/*.dSYM/Contents/Info.plist
 **/*.dSYM/Contents/Resources/DWARF/*
 **/.vscode
-**/*[^.]*$
+**/^(?!.*[.]tmp$).*$
 
 # Packages #
 ############
