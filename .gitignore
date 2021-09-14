@@ -6,7 +6,7 @@ ehthumbs.db
 ehthumbs_vista.db
 
 # Dump file
-*.stackdump
+**/**/*.stackdump
 
 # Folder config file
 [Dd]esktop.ini
@@ -15,14 +15,14 @@ ehthumbs_vista.db
 $RECYCLE.BIN/
 
 # Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
+**/**/*.cab
+**/**/*.msi
+**/**/*.msix
+**/**/*.msm
+**/**/*.msp
 
 # Windows shortcuts
-*.lnk
+**/**/*.lnk
 
 ##### Linux
 *~
@@ -69,15 +69,15 @@ Temporary Items
 
 ##### Android
 # Built application files
-*.apk
-*.ap_
-*.aab
+**/*.apk
+**/*.ap_
+**/*.aab
 
 # Files for the ART/Dalvik VM
-*.dex
+**/*.dex
 
 # Java class files
-*.class
+**/*.class
 
 # Generated files
 bin/
@@ -97,7 +97,7 @@ local.properties
 proguard/
 
 # Log Files
-*.log
+**/*.log
 
 # Android Studio Navigation editor temp files
 .navigation/
@@ -106,7 +106,7 @@ proguard/
 captures/
 
 # IntelliJ
-*.iml
+**/*.iml
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/gradle.xml
@@ -121,8 +121,8 @@ captures/
 
 # Keystore files
 # Uncomment the following lines if you do not want to check your keystore files in.
-#*.jks
-#*.keystore
+#**/*.jks
+#**/*.keystore
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
@@ -153,11 +153,11 @@ lint/tmp/
 # lint/reports/
 
 ##### Backup
-*.bak
-*.gho
-*.ori
-*.orig
-*.tmp
+**/*.bak
+**/*.gho
+**/*.ori
+**/*.orig
+**/*.tmp
 
 ##### GPG
 secring.*
@@ -170,10 +170,10 @@ secring.*
 
 ##### SynopsysVCS
 # Waveform formats
-*.vcd
-*.vpd
-*.evcd
-*.fsdb
+**/*.vcd
+**/*.vpd
+**/*.evcd
+**/*.fsdb
 
 # Default name of the simulation executable.  A different name can be
 # specified with this switch (the associated daidir database name is
@@ -191,7 +191,7 @@ csrc/
 
 # Log file - the following switch allows to specify the file that will be
 # used to write all messages from simulation:  -l <filename>
-*.log
+**/*.log
 
 # Coverage results (generated with urg) and database location.  The
 # following switch can also be used:  urg -dir <coverage_directory>.vdb
@@ -233,13 +233,13 @@ vc_hdrs.h
 
 ##### PuTTY
 # Private key
-*.ppk
+**/*.ppk
 
 ##### Vim
 # Swap
-[._]*.s[a-v][a-z]
-!*.svg  # comment out if you don't need vector files
-[._]*.sw[a-p]
+[._]**/*.s[a-v][a-z]
+!**/*.svg  # comment out if you don't need vector files
+[._]**/*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
 [._]sw[a-p]
@@ -254,7 +254,7 @@ Sessionx.vim
 # Auto-generated tag files
 tags
 # Persistent undo
-[._]*.un~
+[._]**/*.un~
 
 ##### Emacs
 # -*- mode: gitignore; -*-
@@ -262,7 +262,7 @@ tags
 \#*\#
 /.emacs.desktop
 /.emacs.desktop.lock
-*.elc
+**/*.elc
 auto-save-list
 tramp
 .\#*
@@ -282,7 +282,7 @@ tramp
 /elpa/
 
 # reftex files
-*.rel
+**/*.rel
 
 # AUCTeX auto folder
 /auto/
@@ -292,7 +292,7 @@ tramp
 dist/
 
 # Flycheck
-flycheck_*.el
+flycheck_**/*.el
 
 # server auth directory
 /server/
@@ -308,20 +308,20 @@ flycheck_*.el
 
 ##### SublimeText
 # Cache files for Sublime Text
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
+**/*.tmlanguage.cache
+**/*.tmPreferences.cache
+**/*.stTheme.cache
 
 # Workspace files are user-specific
-*.sublime-workspace
+**/*.sublime-workspace
 
 # Project files should be checked into the repository, unless a significant
 # proportion of contributors will probably not be using Sublime Text
-# *.sublime-project
+# **/*.sublime-project
 
 # SFTP configuration file
 sftp-config.json
-sftp-config-alt*.json
+sftp-config-alt**/*.json
 
 # Package control specific files
 Package Control.last-run
@@ -341,11 +341,11 @@ GitHub.sublime-settings
 
 ##### Notepad++
 # Notepad++ backups #
-*.bak
+**/*.bak
 
 ##### TextMate
-*.tmproj
-*.tmproject
+**/*.tmproj
+**/*.tmproject
 tmtags
 
 ##### VisualStudioCode
@@ -354,15 +354,15 @@ tmtags
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
+**/*.code-workspace
 
 # Local History for Visual Studio Code
 .history/
 
 ##### NetBeans
 **/nbproject/private/
-**/nbproject/Makefile-*.mk
-**/nbproject/Package-*.bash
+**/nbproject/Makefile-**/*.mk
+**/nbproject/Package-**/*.bash
 build/
 nbbuild/
 dist/
@@ -404,10 +404,10 @@ nbdist/
 # .idea/compiler.xml
 # .idea/jarRepositories.xml
 # .idea/modules.xml
-# .idea/*.iml
+# .idea/**/*.iml
 # .idea/modules
-# *.iml
-# *.ipr
+# **/*.iml
+# **/*.ipr
 
 # CMake
 cmake-build-*/
@@ -416,7 +416,7 @@ cmake-build-*/
 .idea/**/mongoSettings.xml
 
 # File-based project format
-*.iws
+**/*.iws
 
 # IntelliJ
 out/
@@ -446,9 +446,9 @@ fabric.properties
 .metadata
 bin/
 tmp/
-*.tmp
-*.bak
-*.swp
+**/*.tmp
+**/*.bak
+**/*.swp
 *~.nib
 local.properties
 .settings/
@@ -459,10 +459,10 @@ local.properties
 .externalToolBuilders/
 
 # Locally stored "Eclipse launch configurations"
-*.launch
+**/*.launch
 
 # PyDev specific (Python IDE for Eclipse)
-*.pydevproject
+**/*.pydevproject
 
 # CDT-specific (C/C++ Development Tooling)
 .cproject
@@ -506,48 +506,48 @@ local.properties
 
 ##### Qt
 # C++ objects and libs
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.so.*
-*.dll
-*.dylib
+**/*.slo
+**/*.lo
+**/*.o
+**/*.a
+**/*.la
+**/*.lai
+**/*.so
+**/*.so.*
+**/*.dll
+**/*.dylib
 
 # Qt-es
-object_script.*.Release
-object_script.*.Debug
+object_script.**/*.Release
+object_script.**/*.Debug
 *_plugin_import.cpp
 /.qmake.cache
 /.qmake.stash
-*.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
-*.moc
-moc_*.cpp
-moc_*.h
-qrc_*.cpp
-ui_*.h
-*.qmlc
-*.jsc
+**/*.pro.user
+**/*.pro.user.*
+**/*.qbs.user
+**/*.qbs.user.*
+**/*.moc
+moc_**/*.cpp
+moc_**/*.h
+qrc_**/*.cpp
+ui_**/*.h
+**/*.qmlc
+**/*.jsc
 Makefile*
 *build-*
-*.qm
-*.prl
+**/*.qm
+**/*.prl
 
 # Qt unit tests
 target_wrapper.*
 
 # QtCreator
-*.autosave
+**/*.autosave
 
 # QtCreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
+**/*.qmlproject.user
+**/*.qmlproject.user.*
 
 # QtCreator CMake
 CMakeLists.txt.user*
@@ -566,14 +566,14 @@ compile_commands.json
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+**/*.rsuser
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
-*.userprefs
+**/*.userprefs
 
 # Mono auto generated files
 mono_crash.*
@@ -607,9 +607,9 @@ Generated\ Files/
 [Bb]uild[Ll]og.*
 
 # NUnit
-*.VisualState.xml
+**/*.VisualState.xml
 TestResult.xml
-nunit-*.xml
+nunit-**/*.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -634,70 +634,70 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
-*.ilk
-*.meta
-*.obj
-*.iobj
-*.pch
-*.pdb
-*.ipdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp
-*.tmp_proj
+**/*.ilk
+**/*.meta
+**/*.obj
+**/*.iobj
+**/*.pch
+**/*.pdb
+**/*.ipdb
+**/*.pgc
+**/*.pgd
+**/*.rsp
+**/*.sbr
+**/*.tlb
+**/*.tli
+**/*.tlh
+**/*.tmp
+**/*.tmp_proj
 *_wpftmp.csproj
-*.log
-*.vspscc
-*.vssscc
+**/*.log
+**/*.vspscc
+**/*.vssscc
 .builds
-*.pidb
-*.svclog
-*.scc
+**/*.pidb
+**/*.svclog
+**/*.scc
 
 # Chutzpah Test files
 _Chutzpah*
 
 # Visual C++ cache files
 ipch/
-*.aps
-*.ncb
-*.opendb
-*.opensdf
-*.sdf
-*.cachefile
-*.VC.db
-*.VC.VC.opendb
+**/*.aps
+**/*.ncb
+**/*.opendb
+**/*.opensdf
+**/*.sdf
+**/*.cachefile
+**/*.VC.db
+**/*.VC.VC.opendb
 
 # Visual Studio profiler
-*.psess
-*.vsp
-*.vspx
-*.sap
+**/*.psess
+**/*.vsp
+**/*.vspx
+**/*.sap
 
 # Visual Studio Trace Files
-*.e2e
+**/*.e2e
 
 # TFS 2012 Local Workspace
 $tf/
 
 # Guidance Automation Toolkit
-*.gpState
+**/*.gpState
 
 # ReSharper is a .NET coding add-in
 _ReSharper*/
-*.[Rr]e[Ss]harper
-*.DotSettings.user
+**/*.[Rr]e[Ss]harper
+**/*.DotSettings.user
 
 # TeamCity is a build add-in
 _TeamCity*
 
 # DotCover is a Code Coverage Tool
-*.dotCover
+**/*.dotCover
 
 # AxoCover is a Code Coverage Tool
 .axoCover/*
@@ -707,16 +707,16 @@ _TeamCity*
 coverage*[.json, .xml, .info]
 
 # Visual Studio code coverage results
-*.coverage
-*.coveragexml
+**/*.coverage
+**/*.coveragexml
 
 # NCrunch
 _NCrunch_*
-.*crunch*.local.xml
+.*crunch**/*.local.xml
 nCrunchTemp_*
 
 # MightyMoose
-*.mm.*
+**/*.mm.*
 AutoTest.Net/
 
 # Web workbench (sass)
@@ -727,11 +727,11 @@ AutoTest.Net/
 
 # DocProject is a documentation generator add-in
 DocProject/buildhelp/
-DocProject/Help/*.HxT
-DocProject/Help/*.HxC
-DocProject/Help/*.hhc
-DocProject/Help/*.hhk
-DocProject/Help/*.hhp
+DocProject/Help/**/*.HxT
+DocProject/Help/**/*.HxC
+DocProject/Help/**/*.hhc
+DocProject/Help/**/*.hhk
+DocProject/Help/**/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
@@ -739,12 +739,12 @@ DocProject/Help/html
 publish/
 
 # Publish Web Output
-*.[Pp]ublish.xml
-*.azurePubxml
+**/*.[Pp]ublish.xml
+**/*.azurePubxml
 # Note: Comment the next line if you want to checkin your web deploy settings,
 # but database connection strings (with potential passwords) will be unencrypted
-*.pubxml
-*.publishproj
+**/*.pubxml
+**/*.publishproj
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
 # checkin your Azure Web App publish settings, but sensitive information contained
@@ -752,9 +752,9 @@ publish/
 PublishScripts/
 
 # NuGet Packages
-*.nupkg
+**/*.nupkg
 # NuGet Symbol Packages
-*.snupkg
+**/*.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -762,12 +762,12 @@ PublishScripts/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/[Pp]ackages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
-*.nuget.props
-*.nuget.targets
+**/*.nuget.props
+**/*.nuget.targets
 
 # Microsoft Azure Build Output
 csx/
-*.build.csdef
+**/*.build.csdef
 
 # Microsoft Azure Emulator
 ecf/
@@ -778,30 +778,30 @@ AppPackages/
 BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
-*.appx
-*.appxbundle
-*.appxupload
+**/*.appx
+**/*.appxbundle
+**/*.appxupload
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
-*.[Cc]ache
+**/*.[Cc]ache
 # but keep track of directories ending in .cache
-!?*.[Cc]ache/
+!?**/*.[Cc]ache/
 
 # Others
 ClientBin/
 ~$*
 *~
-*.dbmdl
-*.dbproj.schemaview
-*.jfm
-*.pfx
-*.publishsettings
+**/*.dbmdl
+**/*.dbproj.schemaview
+**/*.jfm
+**/*.pfx
+**/*.publishsettings
 orleans.codegen.cs
 
 # Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
-#*.snk
+#**/*.snk
 
 # Since there are multiple workflows, uncomment next line to ignore bower_components
 # (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
@@ -815,21 +815,21 @@ Generated_Code/
 # because we have git ;-)
 _UpgradeReport_Files/
 Backup*/
-UpgradeLog*.XML
-UpgradeLog*.htm
+UpgradeLog**/*.XML
+UpgradeLog**/*.htm
 ServiceFabricBackup/
-*.rptproj.bak
+**/*.rptproj.bak
 
 # SQL Server files
-*.mdf
-*.ldf
-*.ndf
+**/*.mdf
+**/*.ldf
+**/*.ndf
 
 # Business Intelligence projects
-*.rdl.data
-*.bim.layout
-*.bim_*.settings
-*.rptproj.rsuser
+**/*.rdl.data
+**/*.bim.layout
+**/*.bim_**/*.settings
+**/*.rptproj.rsuser
 *- [Bb]ackup.rdl
 *- [Bb]ackup ([0-9]).rdl
 *- [Bb]ackup ([0-9][0-9]).rdl
@@ -838,27 +838,27 @@ ServiceFabricBackup/
 FakesAssemblies/
 
 # GhostDoc plugin setting file
-*.GhostDoc.xml
+**/*.GhostDoc.xml
 
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
 node_modules/
 
 # Visual Studio 6 build log
-*.plg
+**/*.plg
 
 # Visual Studio 6 workspace options file
-*.opt
+**/*.opt
 
 # Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
-*.vbw
+**/*.vbw
 
 # Visual Studio LightSwitch build output
-**/*.HTMLClient/GeneratedArtifacts
-**/*.DesktopClient/GeneratedArtifacts
-**/*.DesktopClient/ModelManifest.xml
-**/*.Server/GeneratedArtifacts
-**/*.Server/ModelManifest.xml
+**/**/*.HTMLClient/GeneratedArtifacts
+**/**/*.DesktopClient/GeneratedArtifacts
+**/**/*.DesktopClient/ModelManifest.xml
+**/**/*.Server/GeneratedArtifacts
+**/**/*.Server/ModelManifest.xml
 _Pvt_Extensions
 
 # Paket dependency manager
@@ -873,23 +873,23 @@ paket-files/
 
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
-*.pyc
+**/*.pyc
 
 # Cake - Uncomment if you are using it
 # tools/**
 # !tools/packages.config
 
 # Tabs Studio
-*.tss
+**/*.tss
 
 # Telerik's JustMock configuration file
-*.jmconfig
+**/*.jmconfig
 
 # BizTalk build output
-*.btp.cs
-*.btm.cs
-*.odx.cs
-*.xsd.cs
+**/*.btp.cs
+**/*.btm.cs
+**/*.odx.cs
+**/*.xsd.cs
 
 # OpenCover UI analysis results
 OpenCover/
@@ -898,10 +898,10 @@ OpenCover/
 ASALocalRun/
 
 # MSBuild Binary and Structured Log
-*.binlog
+**/*.binlog
 
 # NVidia Nsight GPU debugger configuration file
-*.nvuser
+**/*.nvuser
 
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
@@ -953,86 +953,86 @@ _deps
 
 ##### C++
 # Prerequisites
-*.d
+**/*.d
 
 # Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+**/*.slo
+**/*.lo
+**/*.o
+**/*.obj
 
 # Precompiled Headers
-*.gch
-*.pch
+**/*.gch
+**/*.pch
 
 # Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+**/*.so
+**/*.dylib
+**/*.dll
 
 # Fortran module files
-*.mod
-*.smod
+**/*.mod
+**/*.smod
 
 # Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+**/*.lai
+**/*.la
+**/*.a
+**/*.lib
 
 # Executables
-*.exe
-*.out
-*.app
+**/*.exe
+**/*.out
+**/*.app
 
 ##### C
 # Prerequisites
-*.d
+**/*.d
 
 # Object files
-*.o
-*.ko
-*.obj
-*.elf
+**/*.o
+**/*.ko
+**/*.obj
+**/*.elf
 
 # Linker output
-*.ilk
-*.map
-*.exp
+**/*.ilk
+**/*.map
+**/*.exp
 
 # Precompiled Headers
-*.gch
-*.pch
+**/*.gch
+**/*.pch
 
 # Libraries
-*.lib
-*.a
-*.la
-*.lo
+**/*.lib
+**/*.a
+**/*.la
+**/*.lo
 
 # Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+**/*.dll
+**/*.so
+**/*.so.*
+**/*.dylib
 
 # Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+**/*.exe
+**/*.out
+**/*.app
+**/*.i*86
+**/*.x86_64
+**/*.hex
 
 # Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+**/*.dSYM/
+**/*.su
+**/*.idb
+**/*.pdb
 
 # Kernel Module Compile Results
-*.mod*
-*.cmd
+**/*.mod*
+**/*.cmd
 .tmp_versions/
 modules.order
 Module.symvers
