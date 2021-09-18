@@ -6,9 +6,7 @@
 #pragma GCC optimize ("O3")
 #pragma GCC target ("sse4")
 #include<bits/stdc++.h>
-
 using namespace std;
-
 typedef long long int ll;
 #define ff first
 #define Shazam ios_base::sync_with_stdio(false);   cin.tie(NULL); cout.tie(NULL);
@@ -28,18 +26,12 @@ const int mod1 = 1e9 + 7;
 
 int main(){
     Shazam;
-    int n; cin >> n;
-    vector<array<ll,2>> a(n);
-    for(int i = 0; i < n; i++){
-        cin >> a[i][0] >> a[i][1];
+    int c = 1;
+    test(){
+        
+        cout<<"Case #"<<c<<": ";
+        
+        c++;
     }
-    sort(all(a));
-    ll ans = 0;
-    ll cur = 0;
-    for(int i = 0; i < n; i++){
-        cur += a[i][0];
-        ans += (a[i][1] - cur);
-    }
-    cout << ans << endl;
     return 0;
 }
