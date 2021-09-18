@@ -1,5 +1,5 @@
 # Codes
-* Remote Repo For Competitive Programming. 
+* Remote Repo For Competitive Programming! 
 * Almost all the contest directories are indexed same as their contest id no./name on their respective platforms.
 * [Codeforces Profile](https://codeforces.com/profile/Fireswan)
 * [AtCoder Profile(On kenkoooo visualizer)](https://kenkoooo.com/atcoder/#/table/fireswan)
