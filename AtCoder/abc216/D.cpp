@@ -26,55 +26,41 @@ const int mod1 = 1e9 + 7;
 
 int main(){
     Shazam;
-    int n, m; cin >> n >> m;    
-    vector<vector<int>> a(m);
+    int n, m; cin >> n >> m;
+    vector<vector<int>> located_at(n);
+    vector<queue<int>> a;
+    queue<int> q;
     for(int i = 0; i < m; i++){
         int k; cin >> k;
-        vector<int> curr(k);
-        get(curr);
-        reverse(all(curr));
-        a[i] = curr;
-    }
-    set<int> visit;
-    for(int i = 0; i < m; i++){
-        visit.insert(i);
-    }
-    int count = 0;
-    map<int,vector<int>> f;
-    while(true){
-        int got = 0;
-        int emp = 0;
-       
-        if(visit.size() == 0 && count == 2 * n){
-            cout << "Yes" << endl;
-            return 0;
+        queue<int> curr;
+        for(int j = 0; j < k; j++){
+            int x; cin >> x;
+            x--;
+            curr.push(x);
         }
-        for(int i : visit){
-            if(a[i].size() == 0) 
-                continue;
-          	int ele = a[i].back();
-            f[ele].push_back(i);
+        a.push_back(curr);
+        located_at[curr.front()].push_back(i);
+    }
+    for(int i = 0; i < n; i++){
+        if(located_at[i].size() == 2){
+            q.push(i);
         }
-
-        set<int> cur;
-        vector<int> rem;
-        for(auto pp : f){
-            if(pp.ss.size() == 2){
-                got = 1;
-                count += 2;
-                rem.push_back(pp.ff);
-                for(int i : pp.ss){
-                    a[i].pop_back();
-                    if(a[i].size())
-                        cur.insert(i);
+    }
+    while(!q.empty()){
+        int now = q.front();
+        q.pop();
+        for(int i : located_at[now]){
+            a[i].pop();
+            if(a[i].size()){
+                located_at[a[i].front()].push_back(i);
+                if(located_at[a[i].front()].size() == 2){
+                    q.push(a[i].front());
                 }
             }
-        }
-        for(int i : rem){
-            f.erase(f.find(i));
-        }
-        visit = cur;
-        if(got == 0){
+        }  
+    }
+    for(int i = 0; i < m; i++){
+        if(a[i].size()){
             cout << "No" << endl;
             return 0;
         }

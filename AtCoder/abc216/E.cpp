@@ -26,5 +26,39 @@ const int mod1 = 1e9 + 7;
 
 int main(){
     Shazam;
+    int n; cin >> n;
+    ll k; cin >> k;
+    map<ll, ll> f;
+    for(int i = 0; i < n; i++){
+      ll x; cin >> x;
+      f[x]++;
+    }
+    vector<pair<ll, ll>> a(1, {0,1});
+    for(auto pp : f){
+      a.push_back({pp.ff, pp.ss});
+    }
+    ll ans = 0;
+    while(a.size() > 1 && k > 0){
+      int s = a.size();
+      ll dif = a[s - 1].ff - a[s - 2].ff;
+      ll max_moves = dif * a[s - 1].ss;
+      if(k >= max_moves){
+        ans += a[s - 1].ff * (a[s - 1].ff + 1) / 2  * a.back().ss;
+        ans -= a[s - 2].ff * (a[s - 2].ff + 1) / 2  * a.back().ss;
+        k -= max_moves;
+        a[s - 2].ss += a[s - 1].ss;
+        a.pop_back();
+        continue;
+      }
+
+      ll feasible_moves = k / a[s - 1].ss;
+      k %= a[s - 1].ss;
+      ans += a[s - 1].ff * (a[s - 1].ff + 1) / 2 * a.back().ss;
+      ans -= (a[s - 1].ff - feasible_moves) * (a[s - 1].ff - feasible_moves + 1) / 2 * a.back().ss;
+      a[s - 1].ff -= feasible_moves;
+      ans += k * a[s - 1].ff;
+      break;
+    }
+    cout << ans << endl;
     return 0;
 }
