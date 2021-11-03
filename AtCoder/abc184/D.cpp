@@ -3,13 +3,8 @@
   Cause I know one day I'm gonna be the"
                 - Greatest, Eminem
 */
-#pragma GCC optimize ("O3")
-#pragma GCC target ("sse4")
 #include<bits/stdc++.h>
-#include<ext/pb_ds/assoc_container.hpp>
-#include<ext/pb_ds/tree_policy.hpp>
 using namespace std;
-using namespace __gnu_pbds;
 typedef long long int ll;
 #define ff first
 #define Shazam ios_base::sync_with_stdio(false);   cin.tie(NULL); cout.tie(NULL);
@@ -21,7 +16,6 @@ typedef long long int ll;
 #define get(a) fl(i,0,a.size())  cin>>a[i];
 #define pra(a) fl(i,0,a.size()) cout<<a[i]<<" ";	cout<<endl;
 #define pr(a,n) fl(i,0,n) cout<<a[i]<<" ";	cout<<endl;
-typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
 const ll INF = 2e18;
 const int inf = 2e9;
 const int mod1 = 1e9 + 7;
@@ -31,6 +25,18 @@ const int mod1 = 1e9 + 7;
 int main(){
     Shazam;
     double a, b, c; cin >>  a >> b >> c;
-    cout << fixed << setprecision(6) << (100.0 - a)*(a)/(a + b + c) + (100.0 - b)*(b)/(a + b + c) + (100.0 - c)*c/(a + b + c) << endl;
+    vector<vector<vector<double>>> dp(101, vector<vector<double>>(101, vector<double>(101)));
+
+
+    function<double(int, int, int)> recursive = [&](int a, int b, int c){
+      if(dp[a][b][c]) return dp[a][b][c];
+      if(a == 100 || b == 100 || c == 100) return 0.0;
+      double ans = 0;
+      ans += (recursive(a + 1, b, c) + 1 ) * a / (a + b + c);
+      ans += (recursive(a, b + 1, c) + 1 ) * b / (a + b + c);
+      ans += (recursive(a, b, c + 1) + 1 ) * c / (a + b + c); 
+      return dp[a][b][c] = ans;
+    };
+    cout << fixed << setprecision(10) << recursive(a, b, c) << endl;
     return 0;
 }
