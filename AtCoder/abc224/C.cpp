@@ -27,21 +27,12 @@ const int mod1 = 1e9 + 7;
 int main(){
     Shazam;
     int n; cin >> n;
-    vector<pair<long double,long double>> a(n);
+    vector<pair<long long,long long>> a(n);
     for(int i = 0; i < n; i++){
         cin >> a[i].ff >> a[i].ss;
     }
-
-    auto len = [&](auto &a,  auto &b){
-        return sqrtl(abs(a.ff - b.ff) * abs(a.ff - b.ff)  + abs(a.ss - b.ss) * abs(a.ss - b.ss) );
-    };
     auto ok = [&](auto a, auto b, auto c){
-        vector<long double> l;
-        l.push_back(len(a, b));
-        l.push_back(len(b, c));
-        l.push_back(len(c, a));
-        sort(all(l));
-        return (l[0] + l[1] > l[2] );
+        return ((b.ff - a.ff) * (c.ss - a.ss) - (c.ff - a.ff) * (b.ss - a.ss) != 0);
     };
     int ans = 0;
     for(int i = 0; i < n; i++){
